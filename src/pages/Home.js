@@ -21,7 +21,7 @@ export const Home = () => {
         await axios.post('http://localhost:8080/Produto', {
             preco: preco,
 
-            name: perguntas.charAt(0).toUpperCase() + perguntas.slice(1) + "?"
+            name: perguntas.charAt(0).toUpperCase() + perguntas.slice(1)
 
         }).then(sucesso => {
             setName("")
